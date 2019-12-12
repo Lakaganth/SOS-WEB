@@ -19,6 +19,12 @@ const CoachSchema = new Schema({
     type: String,
     required: true
   },
+  coach_img: {
+    type: String
+  },
+  coach_desc: {
+    type: String
+  },
   sport: {
     type: Schema.Types.ObjectId,
     ref: "sport"

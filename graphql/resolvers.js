@@ -25,7 +25,9 @@ module.exports = {
       coach_first_name,
       coach_last_name,
       coach_email,
-      coach_sport
+      coach_sport,
+      coach_img,
+      coach_desc
     } = coachInput;
 
     const existingCoach = await Coach.findOne({ coach_email: coach_email });
@@ -43,7 +45,9 @@ module.exports = {
       coach_first_name: coach_first_name,
       coach_last_name: coach_last_name,
       coach_email: coach_email,
-      coach_sport: coach_sport
+      coach_sport: coach_sport,
+      coach_img: coach_img,
+      coach_desc: coach_desc
     });
 
     const coach = await newCoach.save();

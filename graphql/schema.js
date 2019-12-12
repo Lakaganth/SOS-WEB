@@ -108,6 +108,8 @@ type Coach {
     coach_last_name: String!
     coach_email: String!
     coach_sport: String!
+    coach_img: String
+    coach_desc: String
     sport: Sport
     }
 
@@ -121,6 +123,8 @@ input CoachInputData{
     coach_last_name: String!
     coach_email: String!
     coach_sport: String!  
+    coach_img: String
+    coach_desc: String
 }
 
 
